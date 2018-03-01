@@ -1,0 +1,17 @@
+1. copy debug.keystore file in "C:\Users\user\.android" and paste in "C:\Program Files\Java\jdk1.6.0_13\bin"
+
+2. open Command Prompt,  type "cd C:\Program Files\Java\jdk1.6.0_13\bin"
+
+3. type "keytool -list -keystore debug.keystore"
+
+4. press "Enter" when request password
+
+5. System will generate MD5 fingerprint.
+
+6. Copy this MD5 and go to this link "http://code.google.com/android/maps-api-signup.html" and insert your MD5.
+
+7. you will get api key and set this key in of <com.google.android.maps.MapView android:apiKey = "...your key ... "  /> of "layout/aaa.xml"
+
+**Extra** If you can't find debug.keystore file in "C:\Users\user\.android" or didn't find this path, you can view in Eclipse. Open Eclipse -> Windows -> Preference -> Android -> press + button -> Build. In this path, you will see default debug.keystore. go to this path and do other steps.
+
+For Mac Os ===> Find in "Eclipse -> Preferences -> Android -> Build"    **Extra**
